@@ -31,7 +31,7 @@ nbproject
 
 #build
 build
-languages
+languages/*.pot
 
 # Project Notes
 TODO.md
