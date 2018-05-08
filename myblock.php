@@ -191,9 +191,7 @@ if ( ! class_exists( 'TomodomoCo_Myblock' ) ) :
 			wp_register_style(
 				'myblock',
 				MYBLOCK_PLUGIN_URL . $block_css,
-				array(
-					'wp-blocks',
-				),
+				array(),
 				filemtime( MYBLOCK_PLUGIN_DIR . $block_css )
 			);
 
@@ -201,9 +199,7 @@ if ( ! class_exists( 'TomodomoCo_Myblock' ) ) :
 			wp_register_style(
 				'myblock-editor',
 				MYBLOCK_PLUGIN_URL . $editor_css,
-				array(
-					'wp-blocks',
-				),
+				array(),
 				filemtime( MYBLOCK_PLUGIN_DIR . $editor_css )
 			);
 
