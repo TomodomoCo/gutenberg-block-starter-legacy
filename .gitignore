@@ -15,3 +15,24 @@ __init__.py
 # Credentials
 s3.json
 credentials.json
+
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+.vscode
+
+#build
+build
+languages
+
+# Project Notes
+TODO.md
+NOTES.md

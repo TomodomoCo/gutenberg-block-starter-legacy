@@ -4,7 +4,8 @@ Plugin structure for a custom block.
 
 ## Usage
 
-1. _tbd_
+1. `npm install`
+2. `npm run dev` or `npm run build`
 
 ## About Tomodomo
 
