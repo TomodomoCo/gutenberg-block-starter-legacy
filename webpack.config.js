@@ -30,10 +30,7 @@ const extractConfig = {
       }
     },
     {
-      loader: "sass-loader",
-      query: {
-        outputStyle: inProduction ? "compressed" : "nested"
-      }
+      loader: "sass-loader"
     }
   ]
 };
@@ -64,9 +61,7 @@ wpDependencies.forEach(wpDependency => {
 
 // Webpack config.
 const config = {
-  entry: {
-    animation: ["./src/index.js"]
-  },
+  entry: "./src/index.js",
   externals,
   output: {
     filename: "build/script.js",

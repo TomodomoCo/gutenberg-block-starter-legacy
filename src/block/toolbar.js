@@ -18,17 +18,10 @@ import { BlockControls } from "@wordpress/blocks";
  * @returns {object} Component
  */
 const Toolbar = props => {
-  const {
-    attributes,
-    setAttributes
-  } = props;
+  const { attributes, setAttributes } = props;
 
   // Block Controls
-  return (
-    <BlockControls>
-      Add controls
-    </BlockControls>
-  );
+  return <BlockControls>Add controls</BlockControls>;
 };
 
 export default Toolbar;

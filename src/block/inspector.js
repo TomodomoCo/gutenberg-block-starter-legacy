@@ -9,7 +9,6 @@ import { __ } from "@wordpress/i18n";
 import { InspectorControls } from "@wordpress/blocks";
 import { PanelBody } from "@wordpress/components";
 
-
 /**
  * Internal Dependencies
  */
@@ -20,17 +19,10 @@ import { PanelBody } from "@wordpress/components";
  * @returns {object} Component
  */
 const Inspector = props => {
-  const {
-    attributes,
-    setAttributes
-  } = props;
+  const { attributes, setAttributes } = props;
 
   // Inspector Controls
-  return (
-    <InspectorControls>
-      Add controls
-    </InspectorControls>
-  );
+  return <InspectorControls>Add controls</InspectorControls>;
 };
 
 export default Inspector;

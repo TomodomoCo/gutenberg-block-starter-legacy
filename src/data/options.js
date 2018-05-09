@@ -4,8 +4,6 @@
 
 const options = {};
 
-options.mydropdown = [
-  { label: 'display', value: 'data' },
-];
+options.mydropdown = [{ label: "display", value: "data" }];
 
 export default options;
