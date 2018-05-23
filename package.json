@@ -2,6 +2,10 @@
   "name": "myblock",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=6.0.0"
+  },
   "dependencies": {
     "classnames": "^2.2.5",
     "lodash": "^4.17.4"
@@ -10,6 +14,23 @@
     "lint": "eslint src",
     "build": "cross-env BABEL_ENV=default NODE_ENV=production webpack",
     "dev": "cross-env BABEL_ENV=default webpack --watch"
+  },
+  "babel": {
+    "presets": [
+      "@wordpress/default"
+    ],
+    "env": {
+      "production": {
+        "plugins": [
+          [
+            "@wordpress/babel-plugin-makepot",
+            {
+              "output": "languages/myblock.pot"
+            }
+          ]
+        ]
+      }
+    }
   },
   "devDependencies": {
     "@wordpress/babel-plugin-makepot": "^1.0.0",

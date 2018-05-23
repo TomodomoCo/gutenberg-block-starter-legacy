@@ -6,7 +6,7 @@
  * WordPress Dependencies
  */
 import { __ } from "@wordpress/i18n";
-import { InspectorControls } from "@wordpress/blocks";
+import { InspectorControls } from "@wordpress/editor";
 import { PanelBody } from "@wordpress/components";
 
 /**

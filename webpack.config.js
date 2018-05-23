@@ -44,6 +44,7 @@ const wpDependencies = [
   "components",
   "element",
   "blocks",
+  "editor",
   "hooks",
   "utils",
   "date",

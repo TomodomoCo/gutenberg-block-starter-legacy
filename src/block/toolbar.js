@@ -6,7 +6,7 @@
  * WordPress Dependencies
  */
 import { __ } from "@wordpress/i18n";
-import { BlockControls } from "@wordpress/blocks";
+import { BlockControls } from "@wordpress/editor";
 
 /**
  * Internal Dependencies
