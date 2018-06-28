@@ -49,8 +49,8 @@ class TomodomoCo_Myblock {
 	 */
 	private function init_hooks() {
 		// Set up localization on init Hook.
-		add_action( 'init', array( $this, 'load_textdomain' ), 0 );
-		add_action( 'init', array( $this, 'register_myblock' ) );
+		add_action( 'init', [ $this, 'load_textdomain' ], 0 );
+		add_action( 'init', [ $this, 'register_myblock' ] );
 	}
 
 	/**
@@ -123,12 +123,11 @@ class TomodomoCo_Myblock {
 		wp_register_script(
 			'myblock-js',
 			MYBLOCK_PLUGIN_URL . $block_js,
-			array(
+			[
 				'wp-i18n',
 				'wp-blocks',
 				'wp-element',
-				'wp-editor'
-			),
+			],
 			filemtime( MYBLOCK_PLUGIN_DIR . $block_js )
 		);
 
@@ -136,7 +135,7 @@ class TomodomoCo_Myblock {
 		wp_register_style(
 			'myblock',
 			MYBLOCK_PLUGIN_URL . $block_css,
-			array(),
+			[],
 			filemtime( MYBLOCK_PLUGIN_DIR . $block_css )
 		);
 
@@ -144,14 +143,14 @@ class TomodomoCo_Myblock {
 		wp_register_style(
 			'myblock-editor',
 			MYBLOCK_PLUGIN_URL . $editor_css,
-			array(),
+			[],
 			filemtime( MYBLOCK_PLUGIN_DIR . $editor_css )
 		);
 
-		register_block_type( 'tomodomoco/myblock', array(
+		register_block_type( 'tomodomoco/myblock', [
 			'style' => 'myblock',
 			'editor_style' => 'myblock-editor',
 			'script' => 'myblock-js',
-		) );
+		 ] );
 	}
 }
