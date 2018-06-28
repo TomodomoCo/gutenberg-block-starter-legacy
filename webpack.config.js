@@ -37,7 +37,8 @@ const extractConfig = {
 
 // Externals
 const externals = {
-  react: "React"
+  react: "React",
+  lodash: "lodash"
 };
 // WordPress dependences
 const wpDependencies = [
