@@ -1,21 +1,15 @@
 <?php
 /**
- * Contributors: TomodomoCo
- * Plugin Name: myblock
- * Plugin URI: https://www.myblock.com
- * Description: yourblock description
- * Author: author
- * Author URI: https://author.com
+ * Plugin Name: Mindful.org Section Header
+ * Plugin URI: https://www.mindful.org/
+ * Description: Custom block for a section header
+ * Author: Tomodomo
+ * Author URI: https://tomodomo.co/
  * Version: 1.0.0
- * Text Domain: myblock
- * Domain Path: /languages
- * GitHub Plugin URI: https://github.com/TomodomoCo/myblock
- * Tags: gutenberg, block
- * Requires at least: 3.0.1
- * Tested up to:  4.9.4
- * Stable tag: 1.0.0
- * License: GPLv3 or later
- * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ * Text Domain: section-header
+ * Requires at least: 4.9
+ * Requires PHP: 7.0
+ * License: proprietary
  *
  * @package TomodomoCo_Myblock
  */
