@@ -1,0 +1,24 @@
+{
+  "name": "tomodomo/block-starter",
+  "description": "A template for building a new Gutenberg block",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tomodomo",
+      "email": "hello@tomodomo.co"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "installer-name": "tomodomo-block-starter"
+  },
+  "require": {
+    "php": "^7.0"
+  }
+}
+

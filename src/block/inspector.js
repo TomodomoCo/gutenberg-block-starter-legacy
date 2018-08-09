@@ -1,28 +1,28 @@
 /**
- * External Dependencies
- */
-
-/**
  * WordPress Dependencies
  */
-import { __ } from "@wordpress/i18n";
-import { InspectorControls } from "@wordpress/editor";
-import { PanelBody } from "@wordpress/components";
+import { __ } from '@wordpress/i18n'
+import { InspectorControls } from '@wordpress/editor'
+import { PanelBody } from '@wordpress/components'
 
 /**
- * Internal Dependencies
- */
-
-/**
+ * Inspector panel
  *
- * @param {object} props component props
+ * @param {object} props
  * @returns {object} Component
  */
-const Inspector = props => {
-  const { attributes, setAttributes } = props;
+const Inspector = (props) => {
+  const {
+    attributes,
+    setAttributes,
+  } = props
 
   // Inspector Controls
-  return <InspectorControls>Add controls</InspectorControls>;
-};
+  return (
+    <InspectorControls>
+      Add controls
+    </InspectorControls>
+  )
+}
 
-export default Inspector;
+export default Inspector
