@@ -13,23 +13,23 @@
 
 // If this file is called directly, abort
 if (!defined('WPINC')) {
-	die;
+    die;
 }
 
 // Plugin folder path
 if (!defined('TOMODOMO_BLOCK_STARTER_PLUGIN_DIR')) {
-	define('TOMODOMO_BLOCK_STARTER_PLUGIN_DIR', plugin_dir_path(__FILE__));
+    define('TOMODOMO_BLOCK_STARTER_PLUGIN_DIR', plugin_dir_path(__FILE__));
 }
 
 // Plugin folder URL
 if (!defined('TOMODOMO_BLOCK_STARTER_PLUGIN_URL')) {
-	define('TOMODOMO_BLOCK_STARTER_PLUGIN_URL', plugin_dir_url(__FILE__));
+    define('TOMODOMO_BLOCK_STARTER_PLUGIN_URL', plugin_dir_url(__FILE__));
 }
 
 // Initialise the block
 if (!class_exists('\Tomodomo\Gutenberg\Block\Starter')) {
-	require 'lib/Starter.php';
+    require 'lib/Starter.php';
 
-	$block = new \Tomodomo\Gutenberg\Block\Starter();
-	$block->init();
+    $block = new \Tomodomo\Gutenberg\Block\Starter();
+    $block->init();
 }
