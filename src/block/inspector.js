@@ -20,7 +20,9 @@ const Inspector = (props) => {
   // Inspector Controls
   return (
     <InspectorControls>
-      Add controls
+      <PanelBody title={__('Starter Settings')}>
+        {__('Add controls')}
+      </PanelBody>
     </InspectorControls>
   )
 }
